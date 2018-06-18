@@ -23,6 +23,7 @@ body {
 
 main {
   width: 450px;
+  padding-top: 140px;
   margin: auto;
   background-color: white;
   min-height: inherit;
