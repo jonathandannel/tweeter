@@ -1,7 +1,7 @@
 .new-tweet {
   padding-left: 1em;
   padding-right: 1em;
-  padding-bottom: 2px;
+  padding-bottom: 8px;
 }
 
 .new-tweet input[type="submit"] {
