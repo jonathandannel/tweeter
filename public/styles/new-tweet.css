@@ -7,14 +7,15 @@
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  width: 450px;
   margin: auto;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
 }
 
 .new-tweet textarea[name="text"] {
   min-width: 100%;
-  padding: 8px;
   align: center;
+  padding: 5px;
 }
 
 h2 {
@@ -40,5 +41,5 @@ h2 {
 
 .container {
   min-height: 800px;
-  width: 50%;
+  width: 450px;
 }

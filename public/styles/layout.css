@@ -26,7 +26,8 @@ main {
   padding-top: 140px;
   margin: auto;
   background-color: white;
-  min-height: inherit;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 /*
