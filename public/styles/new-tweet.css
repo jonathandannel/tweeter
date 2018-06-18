@@ -1,0 +1,16 @@
+.new-tweet {
+
+}
+
+.new-tweet input[type="submit"] {
+
+}
+
+.new-tweet textarea[name="text"] {
+  min-width: 100%;
+}
+
+#divider {
+  color: black;
+  border-style: solid;
+}
