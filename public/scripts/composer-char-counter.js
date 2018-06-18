@@ -5,7 +5,9 @@ $(document).ready(function() {
     currentLength = e.target.value.length;
     $(this).siblings('.counter').text(140 - currentLength);
     if (currentLength > 140) {
-      $(this).siblings('.counter').css('color', 'red')
+      $(this).siblings('.counter').css('color', 'red');
+    } else {
+      $(this).siblings('.counter').css('color', 'black');
     }
     // alternatively: $(".counter").text(140 - currentLength);
   })

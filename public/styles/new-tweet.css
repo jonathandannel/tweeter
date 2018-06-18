@@ -1,11 +1,14 @@
 .new-tweet {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   padding-bottom: 8px;
-}
-
-.new-tweet input[type="submit"] {
-
+  background-color: #eee;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 450px;
+  margin: auto;
 }
 
 .new-tweet textarea[name="text"] {
@@ -36,5 +39,7 @@ h2 {
 }
 
 .container {
-  border-radius: 5px 5px 5px 5px ;
+  min-height: 800px;
+  width: 50%;
+  position: relative;
 }

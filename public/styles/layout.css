@@ -19,16 +19,13 @@ body {
   color: #244751;
   background-color: #eee;
   font-family: 'Open Sans', sans-serif;
-  position: relative;
 }
 
 main {
   width: 450px;
-  align: center;
-  background-color: white;
   margin: auto;
-  position: absolute;
-  margin-top: 25%;
+  background-color: white;
+  min-height: inherit;
 }
 
 /*
