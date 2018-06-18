@@ -1,5 +1,7 @@
 .new-tweet {
-
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2px;
 }
 
 .new-tweet input[type="submit"] {
@@ -8,9 +10,31 @@
 
 .new-tweet textarea[name="text"] {
   min-width: 100%;
+  padding: 8px;
+  align: center;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 2px;
 }
 
 #divider {
   color: black;
-  border-style: solid;
+  border-width: thin;
+  border-style:solid;
+  margin-top: 2px;
+}
+
+#new-tweet {
+  align-content: center;
+}
+
+.counter {
+  float: right;
+  margin-right: 20px;
+}
+
+.container {
+  border-radius: 5px 5px 5px 5px ;
 }
