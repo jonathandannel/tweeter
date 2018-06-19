@@ -45,7 +45,7 @@ add height for header */
   padding-left: 10px;
 }
 
-.tweet-container footer .time-ago {
+.tweet-container footer .post-time {
   float: left;
   padding-left: 8px;
 }
@@ -53,6 +53,10 @@ add height for header */
 .tweet-container footer .icons {
   float: right;
   padding-right: 8px;
+}
+
+.tweet-container footer .icons i {
+  padding-left: 5px;
 }
 
 .avatar {
