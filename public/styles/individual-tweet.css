@@ -2,16 +2,19 @@
   margin-top: 50px;
   margin-bottom: 20px;
   border-style: solid;
-  border-width: 0.5px;
+  border-width: 1px;
   border-color: #eee;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 200px;
 }
 
 .tweet-container hr {
-  color: #eee;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #eee;
 }
 
 .tweet-container header {
@@ -24,6 +27,7 @@
 
 .tweet-container h3 {
   margin: auto;
+  padding-bottom: 20px;
 }
 /* relative header
 add height for header */
@@ -32,13 +36,23 @@ add height for header */
   font-size: 1em;
   color: grey;
   margin-left: 50px;
-  margin-top: 25px;
+  margin-top: 15px;
   padding-right: 10px;
 
 }
 
-.tweet-container footer {
+.tweet-container .tweet-body {
+  padding-left: 10px;
+}
+
+.tweet-container footer .time-ago {
+  float: left;
+  padding-left: 8px;
+}
+
+.tweet-container footer .icons {
   float: right;
+  padding-right: 8px;
 }
 
 .avatar {

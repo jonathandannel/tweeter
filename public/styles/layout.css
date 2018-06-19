@@ -32,7 +32,8 @@ main {
   min-height: 100%;
 }
 
-.tweet-feed {
+.tweet-feed footer span {
+  float: left;
 }
 
 /*
