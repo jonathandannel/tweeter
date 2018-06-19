@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   /* Decrement character limit as user types their new tweet */
-  $('#user-input').on('keyup', function (e) {
+  $('#user-input').on('input', function (e) {
     currentLength = e.target.value.length;
     let counter = $(this).siblings('.counter');
     $(counter).text(140 - currentLength);

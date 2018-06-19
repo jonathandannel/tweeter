@@ -1,0 +1,48 @@
+.tweet-container {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #eee;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tweet-container hr {
+  color: #eee;
+}
+
+.tweet-container header {
+  display: flex;
+  flex-direction: row;
+  background-color: #eee;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tweet-container h3 {
+  margin: auto;
+}
+/* relative header
+add height for header */
+
+.tweet-container header .username {
+  font-size: 1em;
+  color: grey;
+  margin-left: 50px;
+  margin-top: 25px;
+  padding-right: 10px;
+
+}
+
+.tweet-container footer {
+  float: right;
+}
+
+.avatar {
+  max-height: 70px;
+  max-width: 70px;
+  padding: 5px;
+}
