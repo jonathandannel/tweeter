@@ -8,7 +8,8 @@
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tweet-container:hover {

@@ -48,7 +48,7 @@ let hardCodedData = [
 $(document).ready(function() {
 
   function createTweetElement(tweet) {
-    let html = `
+    let $html = `
     <article class="tweet-container">
       <header>
         <img class="avatar" src=${tweet.user.avatars.small}>
@@ -69,7 +69,7 @@ $(document).ready(function() {
       </footer>
     </article>
     `
-    $('.tweet-feed').append(html);
+    $('.tweet-feed').append($html);
   };
 
   function renderTweets(data) {
