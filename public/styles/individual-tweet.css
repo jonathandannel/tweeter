@@ -11,6 +11,10 @@
   height: 200px;
 }
 
+.tweet-container:hover {
+  border-color: black;
+}
+
 .tweet-container hr {
   border-style: solid;
   border-width: 0.5px;
