@@ -28,11 +28,26 @@
   background-color: #eee;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  padding: 5px;
+}
+
+.tweet-container .avatar {
+  border-style: 1px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+
+.tweet-container .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-right: 5px;
+  width: 100%;
 }
 
 .tweet-container h3 {
-  margin: auto;
-  padding-bottom: 20px;
+  margin: 0;
 }
 /* relative header
 add height for header */
@@ -40,14 +55,14 @@ add height for header */
 .tweet-container header .username {
   font-size: 1em;
   color: grey;
-  margin-left: 50px;
-  margin-top: 15px;
-  padding-right: 10px;
-
 }
 
 .tweet-container .tweet-body {
   padding-left: 10px;
+}
+
+.tweet-container footer {
+  padding-bottom: 8px;
 }
 
 .tweet-container footer .post-time {
@@ -62,10 +77,4 @@ add height for header */
 
 .tweet-container footer .icons i {
   padding-left: 5px;
-}
-
-.avatar {
-  max-height: 70px;
-  max-width: 70px;
-  padding: 5px;
 }

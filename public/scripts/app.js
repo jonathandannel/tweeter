@@ -52,8 +52,10 @@ $(document).ready(function() {
     <article class="tweet-container">
       <header>
         <img class="avatar" src=${tweet.user.avatars.small}>
-        <h3>${tweet.user.name}</h3>
-        <span class="username">${tweet.user.handle}</span>
+        <div class="name">
+          <h3>${tweet.user.name}</h3>
+          <span class="username">${tweet.user.handle}</span>
+        </div>
       </header>
       <p class="tweet-body">
          ${tweet.content.text}
