@@ -24,10 +24,16 @@ body {
 main {
   width: 450px;
   padding-top: 140px;
+  padding-bottom: 140px;
   margin: auto;
   background-color: white;
   padding-left: 2em;
   padding-right: 2em;
+  min-height: 100%;
+}
+
+#tweet-feed {
+
 }
 
 /*

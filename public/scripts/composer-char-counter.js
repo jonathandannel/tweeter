@@ -6,7 +6,6 @@ $(document).ready(function() {
     let counter = $(this).siblings('.counter');
     $(counter).text(140 - currentLength);
     currentLength > 140 ? $(counter).css('color', 'red') : $(counter).css('color', 'black');
-  })
-
+  });
 
 });
