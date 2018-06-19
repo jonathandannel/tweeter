@@ -18,9 +18,13 @@
   padding: 5px;
 }
 
-h2 {
+.new-tweet h2 {
   margin: 0;
   padding-top: 2px;
+}
+
+.new-tweet input {
+  margin-top: 5px;
 }
 
 #divider {
@@ -36,7 +40,8 @@ h2 {
 
 .counter {
   float: right;
-  margin-right: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 .container {
