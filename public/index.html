@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
-    <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-
-    <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="styles/new-tweet.css" type="text/css" />
-
-    <!-- Add Custom Font -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,700,700i" rel="stylesheet">
-
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -30,12 +20,9 @@
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
     </nav>
-
-    <body>
-
-    <!-- Page-specific (main) content here -->
-    <main>
-
+    <!-- MAIN -->
+    <main class="container">
+      <!-- Post New Tweet -->
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <hr id="divider">
@@ -45,9 +32,9 @@
           <span class="counter">140</span>
         </form>
       </section>
-
+      <!-- Twitter feed -->
       <section class="tweet-feed">
-
+        <!-- Article 1 -->
         <article class="tweet-container">
           <header>
             <h1>Username</h1>
@@ -57,7 +44,7 @@
           </p>
           <footer>Likes Favorites Etc</footer>
         </article>
-
+        <!-- Article 2 -->
         <article class="tweet-container">
           <header>
             <h1>Username</h1>
@@ -69,8 +56,7 @@
         </article>
 
       </section>
+
     </main>
-
-
   </body>
 </html>
