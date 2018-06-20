@@ -27,7 +27,6 @@ $(document).ready(function() {
     $('.tweet-feed').prepend($html);
   };
 
-
   // LOOP THROUGH DATA AND RETURN HTML ELEMENT WITH VARIABLES FILLED
   const renderTweets = (data) => {
     data.forEach((entry) => {
@@ -41,10 +40,10 @@ $(document).ready(function() {
       method: "GET",
       url: "/tweets",
     }) .done((result) => {
+          $('.tweet-feed').empty();
           renderTweets(result);
         })
   };
-
 
   // GET ALL TWEETS ON PAGE LOAD
   getLatest();
@@ -52,15 +51,29 @@ $(document).ready(function() {
   //ON FORM SUBMIT, POST TO /TWEETS AND EMPTY THE TWEET FEED THEN GET ALL AGAIN
   $('#new-tweet').on('submit', function(e) {
     e.preventDefault();
-    $.ajax({
-    method: "POST",
-    url: "/tweets",
-    data: $(this).serialize()
-    })
-      .done(() => {
-        $('.tweet-feed').empty();
-        getLatest();
+    let userInput = $(this).children('textarea').val().trim();
+    let inputErrors = [];
+
+    if (userInput === null || userInput === "") {
+      inputErrors.push('Invalid input.')
+    } else if (userInput.length > 140) {
+      inputErrors.push('Maximum character limit: 140')
+    }
+
+    if (inputErrors.length === 0) {
+      $.ajax({
+        method: "POST",
+        url: "/tweets",
+        data: $(this).serialize()
       })
+      .done(() => {
+        getLatest();
+      });
+    } else {
+      inputErrors.forEach((error) => {
+        alert(error);
+      })
+    }
   });
 
 })
