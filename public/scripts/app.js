@@ -1,8 +1,6 @@
-
-
 $(document).ready(function() {
 
-  function createTweetElement(tweet) {
+  const createTweetElement = (tweet) => {
     let $html = `
     <article class="tweet-container">
       <header>
@@ -29,24 +27,29 @@ $(document).ready(function() {
     $('.tweet-feed').prepend($html);
   };
 
-  function renderTweets(data) {
+
+  // LOOP THROUGH DATA AND RETURN HTML ELEMENT WITH VARIABLES FILLED
+  const renderTweets = (data) => {
     data.forEach((entry) => {
       createTweetElement(entry)
     });
   };
 
-  function getLatest() {
+  // CALL RENDER TWEETS ON AJAX GET SUCCESS
+  const getLatest = () => {
     $.ajax({
       method: "GET",
       url: "/tweets",
-    }) .done(function(data) {
-          renderTweets(data);
+    }) .done((result) => {
+          renderTweets(result);
         })
-  }
+  };
 
+
+  // GET ALL TWEETS ON PAGE LOAD
   getLatest();
 
-
+  //ON FORM SUBMIT, POST TO /TWEETS AND EMPTY THE TWEET FEED THEN GET ALL AGAIN
   $('#new-tweet').on('submit', function(e) {
     e.preventDefault();
     $.ajax({
@@ -54,8 +57,10 @@ $(document).ready(function() {
     url: "/tweets",
     data: $(this).serialize()
     })
-    .done(function(data) {
-      getLatest(data)
-    })
+      .done(() => {
+        $('.tweet-feed').empty();
+        getLatest();
+      })
   });
+
 })
