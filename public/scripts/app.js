@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  /* Create HTML 'template' with all tweet/user details */
   const createTweetElement = (tweet) => {
     const escape = (str) => {
       let div = document.createElement('div');
@@ -33,35 +34,36 @@ $(document).ready(function() {
     $('.tweet-feed').prepend($html);
   };
 
-  // LOOP THROUGH DATA AND RETURN HTML ELEMENT WITH VARIABLES FILLED
+  /* Return HTML template populated with values for each element in database */
   const renderTweets = (data) => {
     data.forEach((entry) => {
       createTweetElement(entry)
     });
   };
 
-  // CALL RENDER TWEETS ON AJAX GET SUCCESS
+  /* GET request to /tweets, but empty the container first so there are no duplicatees */
   const getLatest = () => {
     $.ajax({
       method: "GET",
       url: "/tweets",
-    }) .done((result) => {
-          $('.tweet-feed').empty();
-          renderTweets(result);
-        })
+    })
+    .done((result) => {
+      $('.tweet-feed').empty();
+      renderTweets(result);
+    })
   };
 
-  // GET ALL TWEETS ON PAGE LOAD
+  /* Get all tweets from /tweets on page load */
   getLatest();
 
-  // Slide the New Tweet form when nav button is clicked
-  $('.compose-btn').on('click', (e) => {
+  /* Show/hide New Tweet form when button is clicked */
+  $('.compose-btn').on('click', () => {
     $('.new-tweet').slideToggle('slow', () => {
       $('#user-input').focus();
     })
   })
 
-  //ON FORM SUBMIT, POST TO /TWEETS AND REFRESH
+  /* On form submit: Validate content, do AJAX POST request to /tweets, serialize data, run getLatest() on success */
   $('#new-tweet').on('submit', function(e) {
     e.preventDefault();
     $('.input-errors').empty();
