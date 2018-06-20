@@ -57,6 +57,7 @@ $(document).ready(function() {
   // Slide the New Tweet form when nav button is clicked
   $('.compose-btn').on('click', (e) => {
     $('.new-tweet').slideToggle('slow', () => {
+      $('#user-input').focus();
     })
   })
 
