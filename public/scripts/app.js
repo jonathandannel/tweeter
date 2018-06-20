@@ -54,6 +54,12 @@ $(document).ready(function() {
   // GET ALL TWEETS ON PAGE LOAD
   getLatest();
 
+  // Slide the New Tweet form when nav button is clicked
+  $('.compose-btn').on('click', (e) => {
+    $('.new-tweet').slideToggle('slow', () => {
+    })
+  })
+
   //ON FORM SUBMIT, POST TO /TWEETS AND REFRESH
   $('#new-tweet').on('submit', function(e) {
     e.preventDefault();
