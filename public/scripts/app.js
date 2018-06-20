@@ -55,9 +55,9 @@ $(document).ready(function() {
     let inputErrors = [];
 
     if (userInput === null || userInput === "") {
-      inputErrors.push('Invalid input.')
+      inputErrors.push('Tweets cannot be empty.');
     } else if (userInput.length > 140) {
-      inputErrors.push('Maximum character limit: 140')
+      inputErrors.push('Maximum character limit: 140');
     }
 
     if (inputErrors.length === 0) {
@@ -71,9 +71,11 @@ $(document).ready(function() {
       });
     } else {
       inputErrors.forEach((error) => {
-        alert(error);
+        $('.input-errors').text(error);
       })
+      inputErrors = [];
     }
+
   });
 
 })
