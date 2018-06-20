@@ -48,9 +48,10 @@ $(document).ready(function() {
   // GET ALL TWEETS ON PAGE LOAD
   getLatest();
 
-  //ON FORM SUBMIT, POST TO /TWEETS AND EMPTY THE TWEET FEED THEN GET ALL AGAIN
+  //ON FORM SUBMIT, POST TO /TWEETS AND REFRESH
   $('#new-tweet').on('submit', function(e) {
     e.preventDefault();
+    $('.input-errors').empty();
     let userInput = $(this).children('textarea').val().trim();
     let inputErrors = [];
 
@@ -73,9 +74,7 @@ $(document).ready(function() {
       inputErrors.forEach((error) => {
         $('.input-errors').text(error);
       })
-      inputErrors = [];
     }
-
   });
 
 })
