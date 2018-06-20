@@ -1,17 +1,23 @@
 $(document).ready(function() {
 
   const createTweetElement = (tweet) => {
+    const escape = (str) => {
+      let div = document.createElement('div');
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    };
+
     let $html = `
     <article class="tweet-container">
       <header>
-        <img class="avatar" src=${tweet.user.avatars.small}>
+        <img class="avatar" src=${escape(tweet.user.avatars.small)}>
         <div class="name">
-          <h3>${tweet.user.name}</h3>
-          <span class="username">${tweet.user.handle}</span>
+          <h3>${escape(tweet.user.name)}</h3>
+          <span class="username">${escape(tweet.user.handle)}</span>
         </div>
       </header>
       <p class="tweet-body">
-         ${tweet.content.text}
+         ${escape(tweet.content.text)}
       </p>
       <hr></hr>
       <footer>
