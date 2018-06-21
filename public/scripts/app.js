@@ -22,7 +22,7 @@ $(document).ready(function() {
       </p>
       <hr></hr>
       <footer>
-        <span class="post-time"></span>
+        <span class="post-time">${moment(tweet.created_at).fromNow()}</span>
         <span class="icons">
           <i class="fas fa-flag"></i>
           <i class="fas fa-share-square"></i>
