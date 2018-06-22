@@ -16,7 +16,7 @@ app.use(nodeSassMiddleware({
     outputStyle: 'compressed'
 }));
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, '../public')));
 
 const MongoClient = require("mongodb").MongoClient;
 const MONGODB_URI = "mongodb://localhost:27017/tweeter";
