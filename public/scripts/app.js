@@ -91,6 +91,8 @@ $(document).ready(function() {
         $('.input-errors').text(error);
       })
     }
+
+    $(this).children('textarea').val('');
   });
 
 })
