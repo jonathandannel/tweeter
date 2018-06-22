@@ -3,9 +3,19 @@
 const PORT          = 8080;
 const express       = require("express");
 const bodyParser    = require("body-parser");
+const path          = require("path");
+const nodeSassMiddleware = require('node-sass-middleware');
 const app           = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(nodeSassMiddleware({
+    src: path.join(__dirname, 'scss'),
+    dest: path.join(__dirname, '../public/styles'),
+    debug: true,
+    outputStyle: 'compressed'
+}));
+
 app.use(express.static("public"));
 
 const MongoClient = require("mongodb").MongoClient;
