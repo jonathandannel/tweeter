@@ -76,6 +76,7 @@ $(document).ready(function() {
       inputErrors.push('Maximum character limit: 140');
     }
 
+    /* Make AJAX request if valid input */
     if (inputErrors.length === 0) {
       $.ajax({
         method: "POST",

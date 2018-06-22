@@ -36,6 +36,7 @@ main {
   display: inline-flex;
   color: red;
   font-weight: bold;
+  padding-left: 8px;
 }
 
 /*
