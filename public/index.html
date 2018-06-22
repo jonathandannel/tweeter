@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>Tweeter - Home Page</title>
-    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="main.css" />
 
     <!-- Fonts -->
@@ -36,8 +35,8 @@
       <section class="input-errors"></section>
       <!-- Post New Tweet -->
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <hr id="divider">
+        <h2>Compose Tweet</h2><p></p>
+        <!-- <hr id="divider"> -->
         <form id="new-tweet" action="/tweets" method="post">
           <textarea id="user-input" name="text" placeholder="What are you humming about?" maxlength="140"></textarea>
           <input id="submitNewTweet" type="submit" value="Tweet">

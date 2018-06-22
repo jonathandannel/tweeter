@@ -2,7 +2,7 @@
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 8px;
-  background-color: #eee;
+  background-color: $lightpink;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -12,25 +12,31 @@
   padding-bottom: 1em;
   margin-top: 8px;
   display: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
 }
 
 .new-tweet textarea[name="text"] {
   min-width: 100%;
   align: center;
   padding: 5px;
+  font-size: 16px;
 }
 
 .new-tweet h2 {
   margin: 0;
   padding-top: 2px;
+  color: $black;
 }
 
 .new-tweet input {
   margin-top: 5px;
+  font-size: 16px;
 }
 
 #divider {
-  color: black;
+  color: $black;
   border-width: thin;
   border-style: solid;
   margin-top: 2px;
@@ -44,4 +50,5 @@
   float: right;
   margin-right: 5px;
   margin-top: 10px;
+  font-size: 16px;
 }

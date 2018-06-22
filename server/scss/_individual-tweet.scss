@@ -1,5 +1,5 @@
 .tweet-container {
-  margin-top: 38px;
+  margin-top: 28px;
   margin-bottom: 20px;
   border-style: solid;
   border-width: 1px;
@@ -10,6 +10,7 @@
   border-bottom-right-radius: 5px;
   display: flex;
   flex-direction: column;
+  color: $black;
   &:hover {
     footer .icons {
       display: block;
@@ -30,7 +31,7 @@
 .tweet-container header {
   display: flex;
   flex-direction: row;
-  background-color: #eee;
+  background-color: $pink;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 5px;
@@ -49,6 +50,7 @@
   padding-top: 5px;
   padding-right: 5px;
   width: 100%;
+  font-size: 15px;
 }
 
 .tweet-container h3 {
@@ -57,12 +59,13 @@
 }
 
 .tweet-container header .username {
-  font-size: 1em;
-  color: grey;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .tweet-container .tweet-body {
   padding-left: 10px;
+  font-size: 18px;
 }
 
 .tweet-container footer {
@@ -72,6 +75,7 @@
 .tweet-container footer .post-time {
   float: left;
   padding-left: 8px;
+  font-size: 16px;
 }
 
 .tweet-container footer .icons {

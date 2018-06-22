@@ -1,3 +1,5 @@
+@import 'colors';
+
 html {
   box-sizing: border-box;
 }
@@ -8,13 +10,14 @@ html {
 body {
   margin: 0;
   color: #244751;
-  background-color: #eee;
+  background: $gradient;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
 }
 
 main {
-  width: 40%;
-  padding-top: 70px;
+  width: 35%;
+  padding-top: 64px;
   padding-bottom: 140px;
   margin: auto;
   background-color: white;

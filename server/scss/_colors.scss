@@ -1,0 +1,15 @@
+$sky: #bbdefb;
+$blue: #90caf9;
+$pink: #f8bbd0;
+$darkpurple: #d1c4e9;
+$medpurple: #e1bee7;
+$lightpink: #fce4ec;
+$black: #4a4b4c;
+
+$gradient: repeating-linear-gradient(
+  45deg,
+  $medpurple,
+  $medpurple 10px,
+  $lightpink 10px,
+  $lightpink 20px
+);
