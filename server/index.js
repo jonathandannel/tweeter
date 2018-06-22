@@ -10,8 +10,8 @@ const app           = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(nodeSassMiddleware({
-    src: path.join(__dirname, 'scss'),
-    dest: path.join(__dirname, '/styles'),
+    src: path.join(__dirname, './scss'),
+    dest: path.join(__dirname, '../public/styles/'),
     debug: true,
     outputStyle: 'compressed'
 }));
