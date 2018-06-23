@@ -1,6 +1,6 @@
 # Tweeter
 
-A cute little Twitter clone built with Node, Express, jQuery, and Sass. Makes use of AJAX for hot loading tweets and MongoDB for data persistence.
+A cute little Twitter clone built with Node, Express, jQuery, and Sass. Makes use of AJAX for hot loading tweets and MongoDB for data persistence. Lighthouse Labs week 3 project.
 
 ![alt text](https://github.com/jonathandannel/tweeter/blob/master/docs/screen.png?raw=true)
 
