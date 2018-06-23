@@ -30,7 +30,7 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   app.use("/tweets", tweetsRoutes);
 
   app.listen(PORT, () => {
-    console.log("=> * Tweeter server running on port " + PORT);
+    console.log("=> * Tweeter listening on port " + PORT + " *");
   });
 
 });
