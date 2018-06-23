@@ -58,7 +58,7 @@ $(document).ready(function() {
 
   /* Show/hide New Tweet form when button is clicked */
   $('.compose-btn').on('click', () => {
-    $('.new-tweet').slideToggle('slow', () => {
+    $('.new-tweet').slideToggle('medium', () => {
       $('#user-input').focus();
     })
   })
