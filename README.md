@@ -1,7 +1,9 @@
 # Tweeter
 
-Tweeter is a minimalist Twitter clone built with Node, Express, jQuery, and Sass.
-This project makes use of AJAX for hot loading tweets and MongoDB for data persistence. A lot of fun was had in making this project, and it was a wonderful learning experience.   
+A cute little Twitter clone built with Node, Express, jQuery, and Sass.
+This minimalist project makes use of AJAX for hot loading tweets and dabbles in MongoDB for data persistence.
+
+![alt text](https://github.com/jonathandannel/tweeter/blob/master/docs/screen.png?raw=true)
 
 ## Getting Started
 
