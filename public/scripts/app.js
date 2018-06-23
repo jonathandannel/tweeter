@@ -24,9 +24,9 @@ $(document).ready(function() {
       <footer>
         <span class="post-time">${moment(tweet.created_at).fromNow()}</span>
         <span class="icons">
-          <i class="fas fa-flag" href="#"></i>
-          <i class="fas fa-share-square href="#"></i>
-          <i class="fas fa-heart" href="#"></i>
+          <a href="#"><i class="fas fa-flag"></i></a>
+          <a href="#"><i class="fas fa-share-square"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
         </span>
       </footer>
     </article>
