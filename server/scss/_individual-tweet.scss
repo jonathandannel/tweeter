@@ -14,12 +14,19 @@
   &:hover {
     footer .icons {
       display: block;
+      a {
+        color: inherit;
+        &:hover {
+          color: $myblue;
+          border-color: $mypink;
+        }
+      }
     }
   }
 }
 
 .tweet-container:hover {
-  border-color: gold;
+  border-color: $medpurple;
 }
 
 .tweet-container hr {
@@ -82,7 +89,7 @@
   float: right;
   padding-right: 10px;
   display: none;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .tweet-container footer .icons i {
